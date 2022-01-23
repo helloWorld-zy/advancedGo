@@ -1,0 +1,77 @@
+redis-benchmark -t get,set -d 10 -r 500000 -n 10000 --csv
+"SET","188679.25"
+"GET","200000.00"
+
+keys_count:38382
+memory_used:4.90M
+memory_per_key:133B
+
+
+
+redis-benchmark -t get,set -d 20 -r 500000 -n 10000 --csv
+"SET","208333.33"
+"GET","192307.69"
+
+keys_count:38494
+memory_used:5.49M
+memory_per_key:149B
+
+
+
+redis-benchmark -t get,set -d 50 -r 500000 -n 10000 --csv
+"SET","169491.53"
+"GET","185185.19"
+
+keys_count:38391
+memory_used: 6.65M
+memory_per_key:181B
+
+
+
+redis-benchmark -t get,set -d 100 -r 500000 -n 10000 --csv
+"SET","192307.69"
+"GET","196078.44"
+
+keys_count:38465
+memory_used: 8.43M
+memory_per_key:229B
+
+
+
+redis-benchmark -t get,set -d 200 -r 500000 -n 10000 --csv
+"SET","185185.19"
+"GET","196078.44"
+
+keys_count:38358
+memory_used:12.50M
+memory_per_key:341B
+
+
+
+redis-benchmark -t get,set -d 500 -r 500000 -n 10000 --csv
+"SET","158730.16"
+"GET","178571.42"
+
+keys_count:38489
+memory_used:23.11M
+memory_per_key:629B
+
+
+
+redis-benchmark -t get,set -d 1000 -r 500000 -n 10000 --csv
+"SET","178571.42"
+"GET","204081.64"
+
+keys_count:38511
+memory_used:41.93M
+memory_per_key:1141B
+
+
+
+redis-benchmark -t get,set -d 5000 -r 500000 -n 10000 --csv
+"SET","151515.16"
+"GET","196078.44"
+
+keys_count:38416
+memory_used:191.89M
+memory_per_key:5238B
